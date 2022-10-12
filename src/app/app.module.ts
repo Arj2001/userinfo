@@ -1,21 +1,23 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { UserComponent } from './user/user.component';
 
-const addRoute = [
+const addRoute:Routes = [
   {
-    path:"",
-  }
+    path:"",component:UserComponent
+  },
 ]
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    UserComponent
   ],
   imports: [
     BrowserModule,
